@@ -1,0 +1,386 @@
+%-------------------------
+% Resume in Latex
+% Author: Dinh Thi
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+% Page coloring, fonts, and logos
+\usepackage{pagecolor}
+\usepackage{lato}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{fontawesome}
+% ---
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% ---
+
+% Sections formatting
+\titleformat{\section}{ \vspace{1pt}\scshape\raggedright\large }{}{0em}{}[
+  \color{black}
+  \titlerule
+  \vspace{-5pt}
+]
+% ---
+
+% Custom commands
+
+\newcommand{\sepsection}{\vspace{25pt}}
+
+\newcommand{\resumeItem}[1]{%2
+  \item\small{
+    %\textbf{#1}
+    #1
+    %{: #2 \vspace{-2pt}}
+  } }
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{8pt}
+  \item%-1
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1}	  & #2		       \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}
+  \vspace{-5pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+  \vspace{1pt}
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}
+  \vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}
+  \vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+    \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{\end{itemize}
+  \vspace{-5pt}}
+
+% COLOR THEMES SELECTION
+
+% For Light theme un-comment this and comment on the Dark theme section below
+\colorlet{textcolor}{black}
+\colorlet{urlcolor}{blue}
+\newcommand{\otherThemeRef}
+
+\begin{document}
+
+% HEADING
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large NGUYEN DINH THI}
+  \\
+  \href{https://github.com/dinhthi12/portfolio}{\color{urlcolor}
+    \textsl{portfolio}} \vert \hspace{4pt} {\href{https://github.com/dinhthi12/portfolio}{\color{urlcolor} \textsl{Linkedin}}} &
+  \href{https://mailto:thi884641@gmail.com}{\color{urlcolor}{\faicon{envelope}}
+    \color{textcolor} thi884641@gmail.com}
+  \\
+  \textsl{Da Nang city}
+
+  & {
+      \color{urlcolor}{\faicon{phone}} \color{textcolor} 0796692773}
+  \\
+  \textsl{}
+  &
+  \href{https://github.com/dinhthi12}{ \color{urlcolor}{\faicon{github}}
+    \color{textcolor} dinhthi12}		      \\
+
+\end{tabular*}
+% ---
+\section{Summary}
+ {Aiming to master technical proficiency and enhance communication and project management skills to foster seamless workplace collaboration, I aspire to be a bridge engineer, facilitating effective information conveyance departments and teams.}
+
+
+% EXPERIENCE
+\section{Experiences}
+
+\resumeSubheading {\href{}{Raven Games Corp}}{Company} {Backend
+  developer}{11/2023 – 04/2024}
+\vspace{5pt}
+
+\begin{tabular}{|p{3cm}|p{16cm}|}
+
+  \hline
+  \hspace{5pt} % Khoảng trái
+  \vspace{20pt}
+
+  \multicolumn{1}{c}{\textbf{Achievements}}     &
+  \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[leftmargin=*]
+      \item[-]{I efficiently configured Nginx to
+                  serve the RoR application while managing project source code using SVN.}
+      \item[-]{Successfully deployed SSL certificates for enhanced
+                  security using SSL certificate and SSL certificate key files.}
+      \item[-]{I leveraged PuTTY alongside SSH-RSA authentication on
+                  CentOS7 for remote administration tasks.}
+    \end{itemize}
+  \end{minipage}                  \\
+  \hline
+  \hspace{5pt} % Khoảng trái
+  \vspace{5pt}
+
+  \multicolumn{1}{c}{\textbf{Responsibilities}} &
+  \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[leftmargin=*]
+      \item[-]{Analyze the structural design and components of the website.}
+      \item[-]{Collaborate with the e-commerce website development team.}
+      \item[-]{Available website: }{\href{https://ziu-shop.com}{\color{urlcolor}{Ziushop.com}}
+    \end{itemize}
+  \end{minipage}                  \\
+  \hline
+  \hspace{5pt} % Khoảng trái
+  \vspace{2pt}
+
+  \multicolumn{1}{c}{\textbf{Technical Skills}} &
+  \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[leftmargin=*]
+      \item[-]{Ruby, Ruby on Rails, React Js, Javascript.}
+      \item[-]{HeidiSQL, CentOS7.}
+    \end{itemize}
+  \end{minipage}                  \\
+  \hline
+\end{tabular}
+\vspace{3pt}
+
+
+\resumeSubheading {\href{https://sun-asterisk.vn/}{Sun-asterisk
+    (Internship)}}{Company}
+{Backend developer}{07/2023 – 10/2023}
+\vspace{5pt}
+
+\begin{tabular}{|p{3cm}|p{16cm}|}
+
+  \hline
+  \hspace{5pt} % Khoảng trái
+  \vspace{20pt}
+
+  \multicolumn{1}{c}{\textbf{Achievements}}     &
+  \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[leftmargin=*]
+      \item[-]{Enhanced teamwork proficiency by leveraging collaborative
+                  tools such as Slack and Git for seamless communication and efficient workflow
+                  management.}
+      \item[-]{Participated in a professional project management life
+                  cycle, ensuring adherence to high standards and industry best practices.}
+      \item[-]{Engaged in hands-on experiences with Ruby on Rails, gaining
+                  a deeper understanding of its capabilities and incorporating this knowledge
+                  into workplace workflows for more effective project development.}
+    \end{itemize}
+  \end{minipage}                  \\
+  \hline
+  \hspace{5pt} % Khoảng trái
+  \vspace{5pt}
+
+  \multicolumn{1}{c}{\textbf{Responsibilities}} &
+  \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[leftmargin=*]
+      \item[-]{Contribute to building an effective Management Software Course
+                  Platform.}
+      \item[-]{ Executing user management functions within the project.}
+      \item[-]{ Applied clean code techniques while tackling tasks.}
+      \item[-]{ Applied clean code techniques while tackling tasks.}
+      \item[-]{Engaged in hands-on experiences with Ruby on Rails, gaining
+                  a deeper understanding of its capabilities and incorporating this knowledge
+                  into workplace workflows for more effective project development.}
+
+    \end{itemize}
+  \end{minipage}                  \\
+  \hline
+  \hspace{5pt} % Khoảng trái
+  \vspace{2pt}
+
+  \multicolumn{1}{c}{\textbf{Technical Skills}} &
+  \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[leftmargin=*]
+      \item[-]{Ruby, Ruby on Rails.}
+      \item[-]{Mysql, Ubuntu 22.04.}
+    \end{itemize}
+  \end{minipage}                  \\
+  \hline
+\end{tabular}
+%-----------------------------------------------------------------------------------%
+% PROJECTS
+%-----------------------------------------------------------------------------------%
+\section{Personal Projects}
+\resumeSubheading {Football Fields Management}{}
+{Description: With this application, users can easily search for nearby football fields, and book them for specific dates and times}{}
+\begin{tabular}{|p{3cm}|p{16cm}|}
+
+  \hline
+  \hspace{1pt} % Khoảng trái
+
+  \hspace{4pt}\textbf{Role}                     &
+  \vspace{1pt}
+  \hspace{4pt}{Leader}, {Backend developer}
+  \\
+  \hline
+  \hspace{1pt} % Khoảng trái
+
+  \hspace{4pt}\textbf{Team size}                &
+  \vspace{1pt}
+  \hspace{4pt}{3}
+  \\
+  \hline
+  \hspace{5pt} % Khoảng trái
+  \vspace{20pt}
+
+  \multicolumn{1}{c}{\textbf{Responsibilities}} &
+  \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[leftmargin=*]
+      \item[-] Compose comprehensive project documentation, encompassing implementation guides, user manuals, and source code documentation.
+      \item[-] Design database, develop and deploy critical functionalities utilizing the Laravel framework, with a focus on creating code that is not only maintainable and
+
+    \end{itemize}
+  \end{minipage}                  \\
+
+  \hline
+  \hspace{1pt} % Khoảng trái
+
+  \hspace{4pt}\textbf{Link}}                    &
+  \vspace{1pt}
+  \hspace{4pt}\textbf{\href{https://github.com/dinhthi12/musical_instrument_system }{Github{\
+          \color{urlcolor}{\faicon{link}}}}}
+  \vert \hspace{4pt}
+  \textbf{\href{https://www.youtube.com/channel/UCK9nL1AikfpMvRTwed0NDxQ}{Demo{\
+  \color{urlcolor}{\faicon{link}}}}}              \\
+  \hline
+  \hspace{5pt} % Khoảng trái
+  \vspace{2pt}
+
+  \multicolumn{1}{c}{\textbf{Technical Skills}} &
+  \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[leftmargin=*]
+      \item[-]{Ruby, Ruby on Rails.}
+      \item[-]{Mysql, Ubuntu 22.04.}
+    \end{itemize}
+  \end{minipage}                  \\
+  \hline
+\end{tabular}
+\vspace{3pt}
+\resumeSubheading {Football Fields Management}{}
+{Description: With this application, users can easily search for nearby football fields, and book them for specific dates and times}{}
+\begin{tabular}{|p{3cm}|p{16cm}|}
+
+  \hline
+  \hspace{1pt} % Khoảng trái
+
+  \hspace{4pt}\textbf{Role}                     &
+  \vspace{1pt}
+  \hspace{4pt}{Leader}, {Backend developer}
+  \\
+  \hline
+  \hspace{1pt} % Khoảng trái
+
+  \hspace{4pt}\textbf{Team size}                &
+  \vspace{1pt}
+  \hspace{4pt}{3}
+  \\
+  \hline
+  \hspace{5pt} % Khoảng trái
+  \vspace{20pt}
+
+  \multicolumn{1}{c}{\textbf{Responsibilities}} &
+  \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[leftmargin=*]
+      \item[-] Compose comprehensive project documentation, encompassing implementation guides, user manuals, and source code documentation.
+      \item[-] Design database, develop and deploy critical functionalities utilizing the Laravel framework, with a focus on creating code that is not only maintainable and
+        scalable but also optimized for performance.
+      \item[-] Design database, develop and deploy critical functionalities utilizing the Laravel framework.
+
+    \end{itemize}
+  \end{minipage}                  \\
+
+  \hline
+  \hspace{1pt} % Khoảng trái
+
+  \hspace{4pt}\textbf{Link}}                    &
+  \vspace{1pt}\textbf{\href{https://github.com/dinhthi12/musical_instrument_system }{Github{\
+          \color{urlcolor}{\faicon{link}}}}}
+  \vert \hspace{4pt}
+  \textbf{\href{https://www.youtube.com/channel/UCK9nL1AikfpMvRTwed0NDxQ}{Demo{\
+  \color{urlcolor}{\faicon{link}}}}}              \\
+
+  \hline
+  \hspace{5pt} % Khoảng trái
+  \vspace{2pt}
+
+  \multicolumn{1}{c}{\textbf{Technical Skills}} &
+  \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[leftmargin=*]
+      \item[-]{Ruby, Ruby on Rails.}
+      \item[-]{Mysql, Ubuntu 22.04.}
+    \end{itemize}
+  \end{minipage}                  \\
+  \hline
+\end{tabular}
+% ---
+% EDUCATION
+\section{Education}
+\resumeSubheading {Ha Noi
+  Open University(HOU)}{03/2024 - Present}
+{Majoring in software engineering}{}
+% ---
+
+% \hfill \textsl{ Click on items for details. \color{urlcolor}{\faicon{link}}}
+
+\section{Certifications}
+\begin{minipage}[t]{0.5\textwidth}
+  \begin{itemize}[leftmargin=*]
+    \item[-] \textbf{HackerRank Coding}
+      \textbf{\href{https://www.hackerrank.com/profile/thi884641}{\color{urlcolor}{\faicon{link}}}}
+  \end{itemize}
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+  \begin{itemize}[leftmargin=*]
+    \item[-] \textbf{Toeic} - 650
+    \item[-] \textbf{JLPT} - N4
+  \end{itemize}
+\end{minipage}
+
+% ---
+\section{Programming Skills}
+\begin{minipage}[t]{0.5\textwidth}
+  \begin{itemize}[leftmargin=*]
+    \item[-] \textbf{Languages:} Java, PHP, SQL, Javascript
+    \item[-] \textbf{Operating systems:} Ubuntu, CentOS7
+  \end{itemize}
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+  \begin{itemize}[leftmargin=*]
+    \item[-] \textbf{Frameworks:} Laravel, Slim
+    \item[-] \textbf{Tools:} Draw.io, Trello, Postman, DBeaver
+  \end{itemize}
+\end{minipage}
+
+% ---
+\end{document}
